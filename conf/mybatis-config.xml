@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!DOCTYPE configuration
+	    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+	<configuration>
+		<settings>
+			<!-- changes from the defaults -->
+			<setting name="lazyLoadingEnabled" value="false" />
+		</settings>
+
+		<environments default="development">
+			<environment id="development">
+				<transactionManager type="JDBC"/>
+				<dataSource type="POOLED">
+					<property name="driver" value="com.mysql.jdbc.Driver"/>
+					<property name="url" value="jdbc:mysql://IP:3306/wifi?useUnicode=true&amp;characterEncoding=utf-8&amp;autoReconnect=true"/>
+					<property name="username" value="xxx"/>
+					<property name="password" value="xxx"/>
+					<property name="poolPingQuery" value="1"/>
+					<property name="poolPingEnabled" value="true"/>
+					<property name="poolPingConnectionsNotUsedFor" value="3600000"/>
+				</dataSource>
+			</environment>
+		</environments>
+	</configuration>

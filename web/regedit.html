@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>欢迎光临 Wifi</title>
+	<meta name="viewport" content="width=device-width initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link href="/ewifi/css/bootstrap.css" rel="stylesheet">
+	<link href="/ewifi/css/style.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="/ewifi/js/md5.js"></script>
+	<script type="text/javascript">
+		function submitform(){
+			document.getElementById("password").value=hex_md5(document.getElementById("password").value);
+			document.getElementById("userlogin").submit();
+		}
+	</script>
+	</head>
+<body>
+	<form id="userlogin"  method="post" action="/ewifi/submitregedit/">
+		<div class="tmall_demo">
+			<div class="div_del mobileverify">
+				
+				<div class="tmall_border">
+					<input type="text" class="demo_txt" maxlength="11" size="11" value="" name="wifiname" placeholder="请输入用户名"></div>
+				<div class="tmall_border">
+					<input id="password" type="password" class="demo_txt" maxlength="11" size="11" value="" name="wifipass" placeholder="请输入密码"></div>
+				<div class="row"> <i></i>
+					<p>
+						<input name="agreement" checked="" type="checkbox">
+						我已阅读并接受
+						<a href="/ewifi/page/agreement.html" title="">《用户协议》</a>
+					</p>
+				</div>
+				<input type="hidden" name="gw_address" value="<<param.gw_address>>">
+				<input type="hidden" name="gw_port" value="<<param.gw_port>>">
+				<input type="hidden" name="gw_id" value="<<param.gw_id>>">
+				<input type="hidden" name="url" value="<<param.url>>">
+				
+				<div class="mt5">
+					<input id="submithandle"  type="button" onclick="submitform();" class="into_btn verifySubmitHandler" value="注册"></div>
+			</div>
+		</div>
+	</form>
+</body>
+</html>

@@ -1,0 +1,59 @@
+body{ margin:0px; padding:0px; font-size:12px;font-family: "Microsoft YaHei" ! important; text-align:center;background:#fff;}
+*,html,div,input,img,span,h1,h2,h3,h4,h5,h6,p,dl,dt,dd,ul,li,a,form,textarea{ margin:0px; padding:0px;}
+a,a img{ border:none;}
+a,a:Hover,a:visited{text-decoration:none;}
+ul,li{ list-style:none;}
+.red{ color:#f60;}
+.grey{ color:#999;}
+.clear{clear:both;}
+
+.fixed{ position:fixed;left:0px;top:0px; z-index:10;}
+.tmall_demo{ display:block; margin:0px auto; clear:both;min-width:320px; }
+.tmall_ad{ clear:both; width:100%; margin:0px auto;}
+.tmall_border, .row{border:1px solid #ddd; background:#fff; border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;padding:0px; width:94%; margin:15px auto; clear:both; position:relative;}
+.row{border:none;}
+.tmall_border a{margin:0px; padding:0px 10px;display:block;clear:both;border-bottom:1px solid #E6E6E6;background:url(../images/ico_a.png) no-repeat 98.5% center;font-size:15px; color:#666; text-align:left; height:46px;}
+.tmall_border a span{ display:inline-block; height:46px; line-height:45px;}
+.tmall_border a i{ float: left; margin-right:10px; display:inline-block; width:30px; height:30px; margin-top:9px;}
+.tmall_border a.last{ border-bottom:none;}
+.div_bottom{ width:95%; clear:both; margin:10px auto; height:20px;}
+.div_bottom a{ display:inline-block; float:left; color:#666; text-align:left; font-size:14px;}
+.div_bottom a.right_a{ float:right;}
+.demo_tit{ font-size:15px; font-weight: normal; color:#333; text-align:left; margin:10px auto 0px; clear:both; display:block; width:95%;}
+.demo_txt{ border:none; height:40px; width:96%;font-family: "Microsoft YaHei" ! important; font-size:14px; padding-left:4px;}
+.tmall_border a.del{ position:absolute; right:10px; top:8px; width:25px; height:25px; display:block; cursor:pointer; background:none; border:none; padding:0px;}
+.into_btn{background:#006EBB;width:95%; border:1px solid #006EBB;border-radius:3px; height:40px; font-size:18px; color:#fff;font-family: "Microsoft YaHei" ! important;cursor:pointer;}
+.demo_logo{ width:95%; margin:10px auto; display:block; clear:both; height:auto; overflow:hidden;}
+.demo_logo span{ display:inline-block; width:80px; margin-right:10px; float:left;}
+.demo_logo span img{ padding:2px; border:1px solid #ddd;}
+.demo_logo div{ display:inline-block; float: left; width:60%; text-align:left; }
+.demo_logo div p{ margin:5px 0px; line-height:20px; font-size:14px; color:#999;}
+.demo_logo div h3{ font-weight:normal; text-align:left; font-size:18px; color:#333;}
+.div_right,.div_del{ clear:both; width:100%; margin:0px auto;40}
+.div_right p, #notify p{ text-align: center; margin-bottom:5px; line-height:20px; color:#666;}
+#notify p{line-height:2em;font-size:14px;}
+.get_btn{background:#f60;width:95%; border:none;border-radius:3px; height:40px; font-size:18px; color:#fff;font-family: "Microsoft YaHei" ! important;cursor:pointer;}
+.send_pwd_box{ text-align:center;border:1px solid #f60; background:#fff; border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;padding:0px; width:94%; margin:15px auto; clear:both; height:60px; padding:10px 0px; line-height:18px; position:relative; font-size:14px;}
+.send_pwd_box i{ display:inline-block; background:url(../images/ico_t.png) no-repeat; width:12px; height:6px; position: absolute;top:-6px; left:50%; margin-left:-6px;}
+.mt5{margin-top:5px;}
+#notify .alert{margin-bottom:0;font-size:14px;}
+.btn-large{padding:12px 0 !important;font-size:16px;}
+.fastlogin{margin:10px 0px;padding:10px 0;border-radius:10px; display:block;clear:both;border:1px solid #E6E6E6;background:url(../images/ico_a.png) no-repeat 98.5% center;font-size:15px; color:#666;cursor:pointer;}
+.fastlogin:hover{background-color:#efefef;}
+.fastlogin p{line-height:2em;}
+.mobileverify a{margin-bottom:7px;}
+.weixinguide p{line-height:2em;font-size:14px;text-align:left;padding:5px 10px;}
+.siteinfo .alert{font-size:20px;margin-bottom:10px;}
+@media screen and (min-width: 1024px) {
+	.tmall_demo{width:1024px;}
+	.tmall_ad img{height:400px;width:auto;}
+	.tmall_ad{height:400px;overflow:hidden;}
+}	
+@media screen and (max-width: 1024px) {
+	.tmall_ad img{height:100%;}			   
+	.tmall_ad{height:300px;overflow:hidden;}
+}	
+@media screen and (max-width: 640px) {
+	.tmall_ad img{width:100%;}
+	.tmall_ad{height:200px;overflow:hidden;}
+}	
